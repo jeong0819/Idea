@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/cb_sta"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:buttonTint="#FFB400"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_pWorker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:textSize="20sp"
+        android:textColor="#131212"
+        android:text="이름"/>
+
+</LinearLayout>

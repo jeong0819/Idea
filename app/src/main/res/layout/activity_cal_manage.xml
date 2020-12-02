@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalManage">
+    <include
+        android:layout_height="wrap_content"
+        layout="@layout/cal_bar"
+        android:layout_width="match_parent"></include>
+
+    <CalendarView
+        android:theme="@style/time"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일정"
+            android:id="@+id/text"
+            android:layout_centerVertical="true"
+            android:textSize="25sp"
+            android:textColor="#FFB400"/>
+        <TextView
+            android:id="@+id/curDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yyyy.mm.dd"
+            android:layout_toRightOf="@+id/text"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"/>
+        <Button
+            android:background="@drawable/addbtndesign"
+            android:id="@+id/addCal"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="추가"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/calView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbars="vertical" />
+</LinearLayout>

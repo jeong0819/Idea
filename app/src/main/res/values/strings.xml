@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">아이디어마켓</string>
+    <string name="kakao_app_key">418c33d1bb771694ffd611dd7f58bde1</string>
+    <string name="msg_loading">잠시만 기다려주세요.&#8230;</string>
+    <string name="error_data_loading">읽는중 오류가 발생했습니다. 인터넷 연결 상태를 확인해보세요.</string>
+    <string name="not_member">비회원입니다.</string>
+    <string name="id_not">이미 사용중인 아이이입니다.</string>
+    <string name="nick_not">이미 사용중인 아이이입니다.</string>
+    <string name="label_no_storage_permission">저장 권한이 부여되지 않았습니다.</string>
+    <string name="label_grant_storage_permission">권한 열기 및 저장 권한 부여</string>
+    <string name="action_settings">설정</string>
+</resources>

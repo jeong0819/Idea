@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu1"
+        android:title="기계장치" />
+    <item
+        android:id="@+id/menu2"
+        android:title="전기전자" />
+    <item
+        android:id="@+id/menu3"
+        android:title="정보통신" />
+    <item
+        android:id="@+id/menu4"
+        android:title="토목건축" />
+    <item
+        android:id="@+id/menu5"
+        android:title="생활도구" />
+    <item
+        android:id="@+id/menu6"
+        android:title="식품음식" />
+    <item
+        android:id="@+id/menu7"
+        android:title="농수산" />
+    <item
+        android:id="@+id/menu8"
+        android:title="기타" />
+</menu>

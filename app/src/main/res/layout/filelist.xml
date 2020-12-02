@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_fn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="파일명"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_un"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성자"
+            android:textSize="15sp"
+            android:textColor="#858383"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/btn_fopen"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="열기"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/addbtndesign"/>
+
+        <Button
+            android:padding="2dp"
+            android:id="@+id/btn_fdown"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="다운로드"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/addbtndesign"/>
+
+        <Button
+            android:id="@+id/btn_fdel"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="삭제"
+            android:background="@drawable/addbtndesign"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/wName"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:text="이름"
+        android:textColor="#090808"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/wChar"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="역할"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/wName"
+        android:layout_centerInParent="true"
+        android:textColor="#090808"/>
+    <TextView
+        android:id="@+id/wRank"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="직책"
+        android:layout_toRightOf="@id/wChar"
+        android:layout_centerInParent="true"
+        android:textColor="#090808"/>
+
+</RelativeLayout>

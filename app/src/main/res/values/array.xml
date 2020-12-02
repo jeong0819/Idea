@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_array">
+        <item>공무원</item>
+        <item>군인</item>
+        <item>회사원</item>
+        <item>자영업</item>
+        <item>학생</item>
+        <item>주부</item>
+        <item>무직</item>
+        <item>기타</item>
+    </string-array>
+</resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditProject">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/ed_pName"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="프로젝트명"
+                android:textCursorDrawable="@drawable/cursor_black"
+                android:backgroundTint="#FFB400"
+                android:textSize="30sp"
+                android:textColor="#090707" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_marginTop="5dp"
+                android:id="@+id/ed_tname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="팀명"
+                android:textCursorDrawable="@drawable/cursor_black"
+                android:backgroundTint="#FFB400"
+                android:textSize="30sp"
+                android:textColor="#090707" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/ed_tsub"
+                android:layout_width="300dp"
+                android:textCursorDrawable="@drawable/cursor_black"
+                android:layout_height="wrap_content"
+                android:hint="주제"
+                android:backgroundTint="#FFB400"
+                android:textSize="30sp"
+                android:textColor="#090707" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="left|center"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종료기간"
+                android:textColor="#090707"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tv_fd"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="#FFB400"
+                android:hint="yyyy.MM.dd"
+                android:singleLine="true"
+                android:textSize="20sp" />
+            <ImageView
+                android:id="@+id/ed_fd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/addnamebutton" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:gravity="center"
+                android:textColor="#090808"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:text="역할"
+                android:id="@+id/txtChar"
+                android:gravity="center"
+                android:textColor="#090808"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="직책"
+                android:textColor="#090808"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/setProjectView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@android:color/darker_gray"
+            android:scrollbars="vertical" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/addbtndesign"
+                android:gravity="left|center"
+                android:onClick="addTeamUser"
+                android:padding="10dp"
+                android:text="   +   팀원 추가"
+                android:textColor="#0A0A0A"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:onClick="backToSetList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="취소"
+                android:textSize="20sp"
+                android:textColor="#FFB400"
+                />
+            <TextView
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="완료"
+                android:textColor="#FFB400"
+                android:textSize="20sp"
+                android:onClick="updateProject"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

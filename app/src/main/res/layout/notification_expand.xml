@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_c_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="팀원의 탈퇴요청"
+        android:textSize="15sp"
+        android:textColor="#0A0A0A"/>
+    <TextView
+        android:id="@+id/tv_c_c"
+        android:textSize="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OOO님이 팀에서 탈퇴를 요청하였습니다."/>
+
+
+
+</LinearLayout>

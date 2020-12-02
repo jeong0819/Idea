@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "540890790099",
+    "firebase_url": "https://realp-7203e.firebaseio.com",
+    "project_id": "realp-7203e",
+    "storage_bucket": "realp-7203e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540890790099:android:78e06662f4754efd13bc26",
+        "android_client_info": {
+          "package_name": "com.example.realp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540890790099-lqu7psn6ifdkkcje308imivnjum0t3eo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.realp",
+            "certificate_hash": "a5e2169940323987d8991706a34bd0a3b0b44433"
+          }
+        },
+        {
+          "client_id": "540890790099-7s1frgtpiinrj6b7nm7or6desol7rc5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-3IffNyyJLLxZ9ZxLnhQRaBHEr4qRVJs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540890790099-7s1frgtpiinrj6b7nm7or6desol7rc5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

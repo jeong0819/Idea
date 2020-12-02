@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            layout="@layout/set_bar"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/ReadViewPager"
+                android:layout_width="411dp"
+                android:layout_height="250dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp" />
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/proImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/together" />
+
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="작성후후후후후"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/friendplus" />
+
+            <TextView
+                android:id="@+id/bDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20-09-29 15:09" />
+
+            <ImageButton
+                android:layout_width="26dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:id="@+id/fav"
+                android:background="@android:color/transparent"
+                android:src="@drawable/star"/>
+        </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="아이디어제목"
+                    android:id="@+id/ideaTitle"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="19dp"
+                    android:layout_span="2"/>
+                <ImageButton
+                    android:layout_column="4"
+                    android:id="@+id/fileList"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ff0000"
+                    android:src="@drawable/filelist" />
+            </TableRow>
+          <TableRow>
+              <TextView
+                  android:layout_marginLeft="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="7dp"
+                  android:layout_span="2"
+                  android:text="카테고리"
+                  android:id="@+id/read_category"/>
+              <TextView
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginTop="7dp"
+                  android:text="특허등록여부 "
+                  android:layout_column="3"
+                  android:id="@+id/patent"/>
+
+              <TextView
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:layout_marginTop="7dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_column="4"
+                  android:text="조회수 10"
+                  android:id="@+id/vNum"/>
+          </TableRow>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:background="#D3D3D3"/>
+
+            <TextView
+                android:layout_height="250dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="일단은 레이아웃만 완성한 상태고 db연동해서 데이터도 넣을 예정입니다"
+                android:id="@+id/read_content"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_centerInParent="true"
+                android:background="#D3D3D3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="댓글"
+                android:textStyle="bold"
+                android:textSize="17dp"
+
+                android:layout_margin="20dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/rvComment"
+                android:scrollbars="vertical"/>
+
+            <EditText
+                android:layout_height="70dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="  댓글달기"
+                android:background="@drawable/underline"
+                android:id="@+id/et_that"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="7dp"
+                android:text="게시"
+                android:id="@+id/post"/>
+        </TableLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearylayoutline"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/won">
+        </ImageView>
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/priceReadBoard"
+
+            android:textSize="25dp"
+            android:text="3000원"></TextView>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/chatting"></ImageButton>
+    </LinearLayout>
+</LinearLayout>
